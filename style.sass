@@ -1,0 +1,413 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans)
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css)
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond)
+
+=transition($time)
+	-webkit-transition: $time
+	-moz-transition: $time
+	transition: $time
+
+$font: "Open Sans"
+$font2: "Cormorant Garamond"
+$fontcolor: #fff
+$fontcolor2: black
+$fontcolor3: #00c7e8
+
+body
+	margin: 0 auto
+	font-family: $font
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+
+header
+	background-color: #313234
+	height: 50px
+	>nav
+		>img
+			padding: 10px 0
+		>ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			float: right
+			text-align: center
+			>li>a
+				line-height: 50px
+				padding: 0 20px
+				display: block
+				color: $fontcolor
+				text-decoration: none
+				text-transform: uppercase
+				&:hover
+					display: block
+					background-color: #55585e
+
+nav
+	position: relative
+
+	li
+		display: inline-block
+
+.clearfix:before,
+.clearfix:after
+	content: " "
+	display: table
+
+.clearfix:after
+	clear: both
+
+.hero
+	width: 100%
+	height: calc(100vh - 50px)
+	background: url(https://images.unsplash.com/photo-1481314673535-d26604db8492?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=)
+	background-size: cover
+	background-position: center
+	overflow: hidden
+
+.slogan
+	height: 200px
+	text-align: right
+	max-width: 450px
+	margin: 20px 0
+	font-size: 28px
+	font-family: $font
+	color: white
+	text-transform: uppercase
+	background: rgba(0,0,0,0.7)
+	float: right
+	padding: 0 20px
+	position: relative
+	top: 25vh
+	>h1
+		text-align: left
+		margin: 0
+		padding: 10px 0
+
+span
+	font-weight: 500
+
+.row:before, .row:after
+	content: ""
+	display: table
+	clear: both
+
+@for $i from 1 through 12
+	.#{col}-#{$i}
+		width: (100% / 12) * $i
+	.#{col-offset}-#{$i}
+		margin-left: (100% / 12) * $i
+
+[class^="fa"]
+	max-width: 1200px
+	text-align: center
+	font-size: 60px
+	padding-top: 10px
+
+.content
+	text-align: center
+
+	h2
+		color: $fontcolor2
+		text-align: center
+		text-transform: uppercase
+		font-size: 25px
+		font-family: $font
+		padding: 20px 0 0 0
+		font-weight: bold
+		cursor: pointer
+		margin: 0
+		&:hover
+			color: $fontcolor3
+
+.icon-btn
+	height: 110px
+	width: 110px
+	border-radius: 15%
+	background-color: #313332
+	color: white
+	font-size: 65px
+	margin-top: 80px
+	cursor: pointer
+	display: inline-block
+	border: none
+	&:hover
+		background-color: $fontcolor3
+
+[class*="col-"]
+	float: left
+	text-align: center
+
+.alldolor
+	color: $fontcolor2
+	text-align: center
+	font-size: 15px
+	font-family: $font
+	margin: 0 auto
+
+.dolor
+	@extend .alldolor
+	padding: 0
+	width: 200px
+	padding-bottom: 15vh
+
+.dolor2
+	@extend .alldolor
+	padding: 0 0 80px 0
+	width: 100%
+
+.icon-btn, h2
+	+transition(.3s)
+
+.icon-btn:hover ~ h2
+	color: $fontcolor3
+
+.gallery
+	[class*="col-"]
+		position: relative
+	img
+		float: left
+		width: 100%
+		margin: 0
+		height: 200px
+		display: block
+		object-fit: cover
+
+.layer
+	position: absolute
+	width: 100%
+	height: 100%
+	text-align: center
+	opacity: 0
+	+transition(.3s)
+	&:hover
+		background-color: rgba(0, 0, 0, 0.5)
+		background-size: cover
+		cursor: pointer
+		opacity: 1
+		display: inline-block
+	i.fa
+		background-color: $fontcolor
+		border-radius: 15%
+		font-size: 20px
+		padding: 5px
+		margin: 80px 20px 0 20px
+
+.people
+	[class*='col-']
+		position: relative
+		height: 200px
+		margin-top: 5%
+		&:hover
+			.pos
+				background: rgba(0, 0, 0, 0.5)
+	img
+		border-radius: 50%
+		width: 100px
+		height: 100px
+	.pos
+		display: block
+		height: 100px
+		width: 100px
+		position: absolute
+		top: 0
+		left: 100px
+		border-radius: 50%
+		+transition(.3s)
+	div.pos
+		p
+			position: relative
+			top: 25%
+			color: $fontcolor
+			display: none
+		&:hover p
+			display: block
+			+transition(.3s)
+
+.job
+	display: none
+
+.wall
+	background: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/BI41D0SCJR.jpg)
+	height: 75vh
+	width: 100%
+	background-size: cover
+	object-fit: cover
+	overflow: hidden
+
+.awesome
+	.col-4 img
+		height: 55vh
+		width: 60%
+		margin-top: 20vh
+	h1
+		color: white
+		text-align: left
+		text-transform: uppercase
+		margin-top: 30vh
+		font-size: 30px
+		text-shadow: 0 0 40px $fontcolor2
+		margin-left: 2.5%
+	.col-6 p
+		text-align: left
+		color: white
+		text-shadow: 0 0 40px $fontcolor2
+		margin: 5%
+
+.numb
+	h1
+		font-family: $font2, serif
+		font-size: 50px
+		margin-top: 20%
+	p
+		text-transform: uppercase
+		color: $fontcolor3
+		font-size: 15px
+		font-family: $font
+		font-weight: bold
+		margin-bottom: 20%
+
+.wall2
+	background: #202026
+
+.foot
+	h1
+		color: white
+		text-align: left
+		text-transform: uppercase
+		font-size: 20px
+		&:after
+			content: " "
+			display: inline-block
+			height: 0.5em
+			vertical-align: bottom
+			width: 3em
+			margin-right: -100%
+			margin-left: 10px
+			border-top: 1px solid white
+	p
+		color: white
+		text-align: left
+		margin-right: 40px
+	button.fa
+		background-color: $fontcolor3
+		font-size: 20px
+		padding: 0
+		color: white
+		height: 30px
+		width: 30px
+		text-align: center
+		border: none
+
+footer
+	background-color: $fontcolor2
+	color: white
+	text-align: center
+	font-family:  $font2, serif
+	font-size: 20px
+
+@media (min-width: 769px) and (max-width: 1200px)
+	header>nav>ul>li>a
+		padding: 0 10px
+
+	@for $i from 1 through 12
+		.#{col-m}-#{$i}
+			width: (100% / 12) * $i
+
+	.layer
+		opacity: 1
+		background-color: rgba(0, 0, 0, 0.5)
+
+	.people
+		[class*='col-']
+			img
+				border-radius: 50%
+				width: 100px
+				height: 100px
+			.pos
+				display: none
+		&:hover .pos
+			background: rgba(0, 0, 0, 0.0)
+		div.pos
+			p
+				display: none
+			&:hover p
+				display: none
+
+	.job
+		display: block
+		margin-top: 0
+		font-style: italic
+		font-size: 14px
+		vertical-align: top
+
+	.wall
+		height: 150vh
+
+	.foot
+		h1
+			margin-left: 10vh
+		p
+			margin: 10vh
+
+		button.fa
+			margin-bottom: 2vh
+
+
+@media (max-width: 768px)
+	header
+		height: 100%
+		>nav
+			>ul
+				float: none
+			>img
+				float: none
+				margin: 0 auto
+				display: block
+
+	nav
+		li
+			display: block
+			text-align: center
+
+	@for $i from 1 through 12
+		.#{col-s}-#{$i}
+			width: (100% / 12) * $i
+
+	.layer
+		opacity: 1
+		background-color: rgba(0, 0, 0, 0.5)
+
+	.people
+		[class*='col-']
+			img
+				border-radius: 50%
+				width: 100px
+				height: 100px
+			.pos
+				display: none
+		&:hover .pos
+			background: rgba(0, 0, 0, 0.0)
+		.pos
+			display: none
+		div.pos:hover p
+			display: none
+
+	.job
+		display: block
+		margin-top: 0
+		font-style: italic
+		font-size: 14px
+		vertical-align: top
+
+	.wall
+		height: 200vh
+
+	.foot
+		h1
+			margin-left: 10vh
+		p
+			margin: 10vh
+		button.fa
+			margin-bottom: 2vh
