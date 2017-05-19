@@ -1,0 +1,30 @@
+{
+  "name": "project-first",
+  "version": "1.0.0",
+  "description": "first grunt project",
+  "main": "index.js",
+  "scripts": {
+    "test": "project-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matstepien/supreme-journey.git"
+  },
+  "keywords": [
+    "first",
+    "grunt"
+  ],
+  "author": "Mateusz Stepien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matstepien/supreme-journey/issues"
+  },
+  "homepage": "https://github.com/matstepien/supreme-journey#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}

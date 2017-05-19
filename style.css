@@ -80,16 +80,16 @@ span {
   clear: both; }
 
 .col-1 {
-  width: 8.33333%; }
+  width: 8.3333333333%; }
 
 .col-offset-1 {
-  margin-left: 8.33333%; }
+  margin-left: 8.3333333333%; }
 
 .col-2 {
-  width: 16.66667%; }
+  width: 16.6666666667%; }
 
 .col-offset-2 {
-  margin-left: 16.66667%; }
+  margin-left: 16.6666666667%; }
 
 .col-3 {
   width: 25%; }
@@ -98,16 +98,16 @@ span {
   margin-left: 25%; }
 
 .col-4 {
-  width: 33.33333%; }
+  width: 33.3333333333%; }
 
 .col-offset-4 {
-  margin-left: 33.33333%; }
+  margin-left: 33.3333333333%; }
 
 .col-5 {
-  width: 41.66667%; }
+  width: 41.6666666667%; }
 
 .col-offset-5 {
-  margin-left: 41.66667%; }
+  margin-left: 41.6666666667%; }
 
 .col-6 {
   width: 50%; }
@@ -116,16 +116,16 @@ span {
   margin-left: 50%; }
 
 .col-7 {
-  width: 58.33333%; }
+  width: 58.3333333333%; }
 
 .col-offset-7 {
-  margin-left: 58.33333%; }
+  margin-left: 58.3333333333%; }
 
 .col-8 {
-  width: 66.66667%; }
+  width: 66.6666666667%; }
 
 .col-offset-8 {
-  margin-left: 66.66667%; }
+  margin-left: 66.6666666667%; }
 
 .col-9 {
   width: 75%; }
@@ -134,16 +134,16 @@ span {
   margin-left: 75%; }
 
 .col-10 {
-  width: 83.33333%; }
+  width: 83.3333333333%; }
 
 .col-offset-10 {
-  margin-left: 83.33333%; }
+  margin-left: 83.3333333333%; }
 
 .col-11 {
-  width: 91.66667%; }
+  width: 91.6666666667%; }
 
 .col-offset-11 {
-  margin-left: 91.66667%; }
+  margin-left: 91.6666666667%; }
 
 .col-12 {
   width: 100%; }
@@ -216,6 +216,7 @@ span {
 
 .gallery [class*="col-"] {
   position: relative; }
+
 .gallery img {
   float: left;
   width: 100%;
@@ -252,10 +253,12 @@ span {
   margin-top: 5%; }
   .people [class*='col-']:hover .pos {
     background: rgba(0, 0, 0, 0.5); }
+
 .people img {
   border-radius: 50%;
   width: 100px;
   height: 100px; }
+
 .people .pos {
   display: block;
   height: 100px;
@@ -267,11 +270,13 @@ span {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   transition: 0.3s; }
+
 .people div.pos p {
   position: relative;
   top: 25%;
   color: #fff;
   display: none; }
+
 .people div.pos:hover p {
   display: block;
   -webkit-transition: 0.3s;
@@ -293,6 +298,7 @@ span {
   height: 55vh;
   width: 60%;
   margin-top: 20vh; }
+
 .awesome h1 {
   color: white;
   text-align: left;
@@ -301,6 +307,7 @@ span {
   font-size: 30px;
   text-shadow: 0 0 40px black;
   margin-left: 2.5%; }
+
 .awesome .col-6 p {
   text-align: left;
   color: white;
@@ -311,6 +318,7 @@ span {
   font-family: "Cormorant Garamond", serif;
   font-size: 50px;
   margin-top: 20%; }
+
 .numb p {
   text-transform: uppercase;
   color: #00c7e8;
@@ -336,10 +344,12 @@ span {
     margin-right: -100%;
     margin-left: 10px;
     border-top: 1px solid white; }
+
 .foot p {
   color: white;
   text-align: left;
   margin-right: 40px; }
+
 .foot button.fa {
   background-color: #00c7e8;
   font-size: 20px;
@@ -360,47 +370,33 @@ footer {
 @media (min-width: 769px) and (max-width: 1200px) {
   header > nav > ul > li > a {
     padding: 0 10px; }
-
   .col-m-1 {
-    width: 8.33333%; }
-
+    width: 8.3333333333%; }
   .col-m-2 {
-    width: 16.66667%; }
-
+    width: 16.6666666667%; }
   .col-m-3 {
     width: 25%; }
-
   .col-m-4 {
-    width: 33.33333%; }
-
+    width: 33.3333333333%; }
   .col-m-5 {
-    width: 41.66667%; }
-
+    width: 41.6666666667%; }
   .col-m-6 {
     width: 50%; }
-
   .col-m-7 {
-    width: 58.33333%; }
-
+    width: 58.3333333333%; }
   .col-m-8 {
-    width: 66.66667%; }
-
+    width: 66.6666666667%; }
   .col-m-9 {
     width: 75%; }
-
   .col-m-10 {
-    width: 83.33333%; }
-
+    width: 83.3333333333%; }
   .col-m-11 {
-    width: 91.66667%; }
-
+    width: 91.6666666667%; }
   .col-m-12 {
     width: 100%; }
-
   .layer {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5); }
-
   .people [class*='col-'] img {
     border-radius: 50%;
     width: 100px;
@@ -413,23 +409,21 @@ footer {
     display: none; }
   .people div.pos:hover p {
     display: none; }
-
   .job {
     display: block;
     margin-top: 0;
     font-style: italic;
     font-size: 14px;
     vertical-align: top; }
-
   .wall {
     height: 150vh; }
-
   .foot h1 {
     margin-left: 10vh; }
   .foot p {
     margin: 10vh; }
   .foot button.fa {
     margin-bottom: 2vh; } }
+
 @media (max-width: 768px) {
   header {
     height: 100%; }
@@ -439,51 +433,36 @@ footer {
       float: none;
       margin: 0 auto;
       display: block; }
-
   nav li {
     display: block;
     text-align: center; }
-
   .col-s-1 {
-    width: 8.33333%; }
-
+    width: 8.3333333333%; }
   .col-s-2 {
-    width: 16.66667%; }
-
+    width: 16.6666666667%; }
   .col-s-3 {
     width: 25%; }
-
   .col-s-4 {
-    width: 33.33333%; }
-
+    width: 33.3333333333%; }
   .col-s-5 {
-    width: 41.66667%; }
-
+    width: 41.6666666667%; }
   .col-s-6 {
     width: 50%; }
-
   .col-s-7 {
-    width: 58.33333%; }
-
+    width: 58.3333333333%; }
   .col-s-8 {
-    width: 66.66667%; }
-
+    width: 66.6666666667%; }
   .col-s-9 {
     width: 75%; }
-
   .col-s-10 {
-    width: 83.33333%; }
-
+    width: 83.3333333333%; }
   .col-s-11 {
-    width: 91.66667%; }
-
+    width: 91.6666666667%; }
   .col-s-12 {
     width: 100%; }
-
   .layer {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5); }
-
   .people [class*='col-'] img {
     border-radius: 50%;
     width: 100px;
@@ -496,17 +475,14 @@ footer {
     display: none; }
   .people div.pos:hover p {
     display: none; }
-
   .job {
     display: block;
     margin-top: 0;
     font-style: italic;
     font-size: 14px;
     vertical-align: top; }
-
   .wall {
     height: 200vh; }
-
   .foot h1 {
     margin-left: 10vh; }
   .foot p {
